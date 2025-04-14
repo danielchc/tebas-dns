@@ -1,0 +1,13 @@
+services:
+  dns:
+    restart: always
+    build: .
+    ports:
+      - "53:53/udp"
+    environment:
+      CRON_SCHEDULE: "* * * * *"
+      DNS_PRIMARY: "1.0.0.1"
+      DNS_SECONDARY: "1.1.1.1"
+      DNS_BLACKLIST: "https://gist.githubusercontent.com/danielchc/a99bdf0f70ddc6856e9804914c5d76c1/raw/c5e6da28db9b3eadf547adac95ed87f08be75ef5/tebas-dns-blacklist.json"
+    cap_add:
+      - NET_ADMIN
