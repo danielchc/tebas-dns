@@ -8,9 +8,8 @@ services:
       CRON_SCHEDULE: "5 4 * * *"
       DNS_PRIMARY: "1.0.0.1"
       DNS_SECONDARY: "1.1.1.1"
-      # Full blacklist
-      # DNS_BLACKLIST: "https://gist.githubusercontent.com/danielchc/a99bdf0f70ddc6856e9804914c5d76c1/raw/e8f0669d21614c68cd063ba7eef24442ae4596f4/tebas-dns-blacklist-full.json"
+       # DNS_BLACKLIST: "https://gist.githubusercontent.com/danielchc/a99bdf0f70ddc6856e9804914c5d76c1/raw/"
       # Minimal blacklist
-      DNS_BLACKLIST: "https://gist.githubusercontent.com/danielchc/24def75140394fd6de29a21aa730efa5/raw/e81ffc5e6fe34572be638caf3fbaa7243c8a9b36/tebas-dns-blacklist-minimal.json"
+      DNS_BLACKLIST: "https://gist.githubusercontent.com/danielchc/24def75140394fd6de29a21aa730efa5/raw/"
     cap_add:
       - NET_ADMIN
